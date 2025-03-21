@@ -1,0 +1,95 @@
+<html lang="en">
+ <head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href='./files/style.css'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        
+    </head>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .team-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+        }
+        .team-members {
+            font-size: 1rem;
+            line-height: 1.5;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+        }
+        .description {
+            font-size: 1rem;
+            margin-top: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+        }
+        .image-container {
+            max-width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            text-align: center; 
+        }
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container mx-auto mt-10 px-4">
+   <div class="flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+     <div class="team-title" id="teamTitle">
+      TIM PBL104
+     </div>
+     <div class="team-members" id="teamMembers">
+      <p>
+       YUSRIL TAULANY
+      </p>
+      <p>
+       ANDRI YANI MEURAXA
+      </p>
+      <p>
+       ARDILLA DWI PUTRI
+      </p>
+      <p>
+       MUNA SRY NASUTION
+      </p>
+      <p>
+       PUTRI BALQIS
+      </p>
+     </div>
+     <div class="description" id="description">
+      “KaryaKita” WEBSITE UNTUK MAHASISWA MENCANTUMKAN PORTOFOLIO DAN PBL
+     </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center items-center">
+     <img alt="A placeholder image" class="image-container" id="imageContainer" src="https://placehold.co/600x400"/>
+    </div>
+   </div>
+  </div>
+  <script>
+   window.addEventListener('load', function() {
+            document.getElementById('teamTitle').classList.add('fade-in');
+            document.getElementById('teamMembers').classList.add('fade-in');
+            document.getElementById('description').classList.add('fade-in');
+            document.getElementById('imageContainer').classList.add('fade-in');
+        });
+  </script>
+ </body>
+</html>
